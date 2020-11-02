@@ -1,3 +1,11 @@
+:root{
+    --linksBg: #d32323;
+    --topCardlinks: #F6F8FA;
+    --newsLikes: rgba(196, 196, 196, 0.1);
+    --mainfooter: #323E48;
+    --bottomfooter: #1F2430;
+    --imgBackground: rgba(0, 0, 0, 0.45);
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +16,9 @@ html, body{
     font-size: 1em;
     color: white;
 }
-
+.container{
+    background: var(--newsLikes);
+}
 header{
     background-color: transparent;
     width: 100%;
@@ -54,16 +64,12 @@ a{
     color: white;
 }
 .img-tag{
-    background: url('./images/image.svg'), rgba(0, 0, 0, 0.45);
+    background: url('./images/image.svg'), var(--imgBackground);
     position: relative;
     top: 0;
     left: 0;
     height: 576px;
     width: 100%;
-    /* display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start; */
     background-blend-mode: soft-light;
 }
 .texts, .img-tag ul{
@@ -71,6 +77,38 @@ a{
     left: 100px;
     top: 40%;
 }
+.full-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.full-text h1{
+    margin-bottom: 1em;
+}
+.top-links{
+    width: 30%;
+    position: absolute;
+    bottom: 28px;
+    left: 35%;
+    display: flex;
+}
+.top-links a.link-btn{
+    width: 33.3%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1em;
+    color: black;
+    font-weight: 600;
+    background: var(--topCardlinks);
+}
+.top-links a.active{
+    background: var(--linksBg);
+    color: white;
+}
+
 .img-tag ul{
     top: 50%;
     display: flex;
@@ -89,11 +127,10 @@ a{
 .img-tag-shadow{
     width: 100%;
     position: relative;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 4px 4px var(--imgBackground);
     z-index: 3;
     background: white;
     padding: 1em 5em;
-    border: 1px solid black;
     border-radius: 10px;
     
 }
@@ -111,7 +148,7 @@ a{
 .details-content span.search-bar{
     width: 57px;
     height: 57px;
-    background: #d32323;
+    background: var(--linksBg);
     border-radius: 5px;
 }
 .details-content span.search-bar a{
@@ -123,7 +160,7 @@ a{
     align-items: center;
 }
 .front-page-explore{
-    margin: 10em 0;
+    margin: 7em 0;
     color: black;
     display: flex;
     flex-direction: column;
@@ -133,7 +170,7 @@ a{
 }
 .top-explore-texts{
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 .explore-images{
     align-self: flex-end;
@@ -146,36 +183,289 @@ a{
     grid-row-gap: 10px;
 }
 .img3{
-    background: url('./images/explore3.svg'), rgba(0, 0, 0, 0.45) ;
+    background: url('./images/explore3.svg'), var(--imgBackground) ;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 .img1{
-    background: url('./images/explore1.svg'), rgba(0, 0, 0, 0.45) no-repeat;
+    background: url('./images/explore1.svg'), var(--imgBackground) no-repeat;
 }
 .img2{
-    background: url('./images/explore2.svg'), rgba(0, 0, 0, 0.45) no-repeat;
+    background: url('./images/explore2.svg'), var(--imgBackground) no-repeat;
 }
 .img{
-    background: url('./images/explore4.svg'), rgba(0, 0, 0, 0.45);
+    background: url('./images/explore4.svg'), var(--imgBackground);
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-end: 4;
 }
 .exp{
     background-blend-mode: soft-light;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.exp p{
+    color: white;
 }
 .explore-btn{
     width: 10%;
     margin: 0 auto;
     padding: 1em 1.5em;
-    background: #d32323;
-    margin-top: 2em;
+    background: var(--linksBg);
+    margin-top: 4em;
     border-radius: 5px;
     text-align: center;
 }
-.explore-btn a{
+div.exp span.explore-btn{
+    margin-top: 2em;
+}
+.explore-btn a, .exp span.explore-btn a{
     width: 100%;
+}
+.exp span.explore-btn{
+    width: 35%;
+    font-size: 12px;
+}
+
+.contents{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.content{
+    flex: 1;
+    margin-right: 10px;
+    box-shadow: 0 4px 4px var(--imgBackground);
+    border-radius: 0 0 15px 15px;
+}
+.text-content{
+    margin: 1em;
+}
+.low-tags{
+    background:var(--newsLikes);
+    padding: 2em 0;
+}
+.lower-tags{
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    padding-top: 1em;
+}
+.lower-tags > *{
+    margin: 1em;
+}
+.lower-tags p{
+    margin-bottom: 2em;
+}
+.feat1{
+    background: url("./images/city1.svg"), var(--imgBackground);
     
+}
+
+.feat2{
+    background: url("./images/city2.svg"), var(--imgBackground);
+}
+
+.feat3{
+    background: url("./images/city3.svg"), var(--imgBackground);
+}
+.content-imgs{
+    min-height: 21.2em;
+    background-blend-mode: overlay;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 4px var(--imgBackground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-imgs p{
+    margin-bottom: 1.5em;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.low-tags h3{
+    padding-top: 1em;
+    margin-bottom: 2em;
+}
+.newsletter{
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 55%;
+    margin: 0 auto;
+}
+.newsletter h4{
+    margin-right: 1.5em;
+    line-height: 3em;
+    
+}
+.newsletter input{
+    width: 60%;
+    border: 1px solid #C4C4C4;
+    padding: 1em;
+    outline: none;
+    box-sizing: border-box;
+}
+.newsletter input:active{
+    outline: none;
+    border: 1px solid #C4C4C4;
+}
+.newsletter a.explore-btn{
+    margin: 0;
+    width: 10%;
+    font-size: 10px;
+    padding: 1.6em;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#bar-foot{
+    margin-bottom: 0;
+}
+footer{
+    min-height: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.main-footer{
+    background: var(--mainfooter);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    padding: 1em 2em 5em;
+}
+.less-footer{
+    background: var(--bottomfooter);
+    padding: 1em;
+}
+.less-footer p{
+    margin-left: 8%;
+}
+.footer-content p, .footer-content h4,  .footer-content h5{
+    padding: 1em;
+}
+.tweet::before{
+    content: url('./images/small-twitter.svg');
+    padding-right: .5em;
+}
+.footer-content p{
+    font-size: 11px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.gmail::before{
+    content: url('./images/email.svg');
+    padding-right: .5em;
+}
+.tel::before{
+    content: url('./images/telephone.svg');
+    padding-right: .5em;
+}
+.face::before{
+    content: url('./images/facebook.svg');
+    padding-right: .5em;
+}
+
+
+/* Register and Login Pages */
+
+.register header{
+        background-color: var(--linksBg);
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        top: 0;
+        left: 0;
+}
+
+.fields{
+    margin: 2em auto;
+    width: 80%;
+    padding: 1em;
+    background: var(--newsLikes);
+    font-weight: 600;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+form{
+    margin: 0;
+    padding: 2em;
+    color: var(--linksBg);
+}
+.name-ctrl{
+    display: flex;
+    justify-content: space-between;
+}
+.form-field input[type = text]{
+    width: 48%;
+    box-sizing: border-box;
+}
+.form-field input[type= text],
+.form-field input[type= email],
+.form-field input[type= password],
+.form-field input[type= number]{
+    background: rgba(196, 196, 196, 0.05);
+    border: 1px solid var(--imgBackground);
+    border-radius: 5px;
+    outline: none;
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+.form-field input[type= email],
+.form-field input[type= password],
+.form-field input[type= number]{
+    width: 100%;
+}
+.form-field input:focus{
+    border: 1.5px solid rgb(130, 203, 228); 
+}
+.btn{
+    position: relative;
+    width: 100%;
+}
+.form-ctrl button.explore-btn{
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 15px;
+    position: absolute;
+    right: 0;
+}
+.check{
+    display: inline-block;
+    margin-right: 1.5em;
+}
+.text-field{
+    width: 100%;
+    position: relative;
+    color: rgba(0, 0, 0, 0.5);
+    min-height: 5em;
+    padding: 2em;
+}
+.text-field a.field-link{
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.text-field p a.field-links{
+    color: var(--linksBg);
+}
+.text-field p:first-child{
+    position: absolute;
+    top: 0;
+}
+.text-field p:nth-child(2){
+    position: absolute;
+    bottom: -5px;
+}
+.login{
+    color: rgba(0, 0, 0, 0.5);
 }
