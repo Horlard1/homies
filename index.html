@@ -16,11 +16,10 @@
                 </div>
                 <nav>
                     <ul class="links">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Properties</a></li>
-                        <li><a href="">Find Roomate</a></li>
-                        <li><a href="">Explore</a></li>
-                        <li><a href="">Blog</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./featured.html">Featured</a></li>
+                        <li><a href="">Get Roomate</a></li>
+                        <li><a href="./blogs.html">Blog</a></li>
                     </ul>
                 </nav>
                 <div class="navs">
@@ -28,6 +27,9 @@
                         <li><a href="./login.html">Login</a></li>
                         <li><a href="./register.html">Register</a></li>
                     </ul>
+                </div>
+                <div class="sidebar">
+                    <button class="toggle"></button>
                 </div>
             </div>
         </header>
@@ -44,37 +46,55 @@
                     </ul>
                 </div>
             </div>
-            <div class="top-links">
-                <a class="link-btn" href="">Rent</a>
-                <a class="link-btn active"  href="">Buy</a>
-                <a class="link-btn" href="">Roomate</a>
-            </div>
-            <div class="img-tag-details">
-               <div class="img-tag-shadow">
-                    <div class="details-content">
-                        <span>
-                            <h4>Location</h4>
-                            <p>Abuja</p>
-                        </span>
-                        <span>
-                            <h4>Property Type</h4>
-                            <p>Duplex</p>
-                        </span>
-                        <span>
-                            <h4>Bedroom</h4>
-                            <p>Six(6)</p>
-                        </span>
-                        <span>
-                            <h4>Max Price</h4>
-                            <p>#800,000</p>
-                        </span>
-                        <span class="search-bar">
-                            <a href=""><img src="./images/search.svg" alt="search"></a>
-                        </span>
-                    </div>
-               </div>
-            </div>
         </div>
+        <div class="img-tag-details">
+            <h3>Find your Dream home</h3>
+            <form class="details-content">
+                <div class="form-c">
+                    <label for="location">Location</label>
+                    <select name="location">
+                        <option value="">Select a city</option>
+                        <option value="Abuja">Abuja</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Benin">Benin</option>
+                    </select>
+                </div>
+                <div class="form-c">
+                    <label for="type">Type</label>
+                    <select name="type">
+                        <option value="deluxe">Deluxe</option>
+                        <option value="minimalist">Minimalist</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="penthouse">Penthouse</option>
+                    </select>
+                </div>
+                <div class="form-c">
+                    <label for="bedroom">Bedrooms</label>
+                    <select name="bedroom">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <div class="form-c">
+                    <label for="price">Price</label>
+                    <select name="price">
+                        <option value="">Select price</option>
+                        <option value="#100,000">#100,000</option>
+                        <option value="#200,000">#200,000</option>
+                        <option value="#300,000">#300,000</option>
+                        <option value="#400,000">#400,000</option>
+                        <option value="#500,000">#500,000</option>
+                    </select>
+                </div>
+                <button href=""><img src="./images/search.svg" alt="search"></button>
+                
+            </form>
+         </div>
+         <div class="top-links">
+             <p class="link-btn" href="">Rent</p>
+             <p class="link-btn active"  href="">Get roomie</p>
+             <p class="link-btn" href="">Buy</p>
+         </div>
         <div class="front-page-explore">
             <div class="top-explore-texts">
                 <h3>Searching for a property?</h3>
@@ -82,25 +102,38 @@
             </div>
             <div class="explore-images">
                 <div class="exp img1">
-                    <p>Good house</p>
-                    <span class="explore-btn"><a href="">3 Listings</a></span>
+                    <img src="./images/explore1.svg" alt="">
+                    <span class="image-placeholder">
+                        <p>Good house</p>
+                        <a href="">3 Listings</a>
+                    </span>
                 </div>
                 <div class="exp img2">
-                    <p>Conducive</p>
-                    <span class="explore-btn"><a href="">6 Listings</a></span>
+                    <img src="./images/explore2.svg" alt="">
+                    
+                    <span class="image-placeholder">
+                        <p>Conducive</p>
+                        <a href="">6 Listings</a>
+                    </span>
                 </div>
                 <div class="exp img3">
-                    <p>Comfort</p>
-                    <span class="explore-btn"><a href="">2 Listings</a></span>
+                    <img src="./images/explore3.svg" alt="">
+                    
+                    <span class="">
+                        <p>Comfort</p>
+                        <a href="">2 Listings</a>
+                    </span>
                 </div>
                 <div class="exp img">
-                    <p>Affordability</p>
-                    <span class="explore-btn"><a href="">9 Listings</a></span>
+                    <img src="./images/explore4.svg" alt="">
+                    
+                    <span class="">
+                        <p>Affordability</p>
+                        <a href="">9 Listings</a>
+                    </span>
                 </div>
             </div>
-            <div class="explore-btn">
-                <a href="">Explore</a>
-            </div>
+                <a class="explore-btn" href="">Explore</a>
         </div>
         <div class="front-page-explore">
             <div class="top-explore-texts">
@@ -140,9 +173,7 @@
                     </div>
                 </div>
             </div>
-            <div class="explore-btn">
-                <a href="">Load More</a>
-            </div>
+            <a class="explore-btn" href="">Load More</a>
             
         </div>
         <div class="front-page-explore low-tags">
@@ -152,24 +183,22 @@
             </div>
             <div class="contents ">
                 <div class="content lower-tags">
-                    <span><img src="./images/home.svg" alt=""></span>
+                    <img src="./images/home.svg" alt="">
                     <h4>Request Roomate</h4>
                     <p>Fill out the request form to find a suitable roommate.</p>
                 </div>
                 <div class="content lower-tags">
-                    <span><img src="./images/people.svg" alt=""></span>
+                    <img src="./images/people.svg" alt="">
                     <h4>Meet Roomate</h4>
                     <p>We will schedule a meeting with you and your prospective roommate to discuss terms and conditions.</p>
                 </div>
                 <div class="content lower-tags">
-                    <span><img src="./images/home.svg" alt=""></span>
+                    <img src="./images/home.svg" alt="">
                     <h4>Enjoy your new home</h4>
                     <p>Fill out the request form to find a suitable roommate.</p>
                 </div>
             </div>
-            <div class="explore-btn">
-                <a href="">Request</a>
-            </div>
+            <a class="explore-btn" href="">Request</a>
         </div>
         <div class="front-page-explore">
             <div class="top-explore-texts">
@@ -208,9 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div class="explore-btn">
-                <a href="">Read More</a>
-            </div>
+            <a class="explore-btn" href="">Read More</a>
         </div>
         <div class="front-page-explore">
             <div class="top-explore-texts">
@@ -218,22 +245,22 @@
                 <p>See popular cities with exciting properties</p>
             </div>
             <div class="contents">
-                <div class="content">
+                <div class="content side">
                     <div class="content-imgs content-img feat1">
                         <p>Abuja</p>
-                        <span><a class="explore-btn" href="">89 Listings</a></span>
+                      <a class="explore-btn" href="">89 Listings</a>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content side">
                     <div class="content-imgs content-img feat2">
                         <p>Lagos</p>
-                        <span><a class="explore-btn"href="">78 Listings</a></span>
+                        <a class="explore-btn"href="">78 Listings</a>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content side">
                     <div class="content-imgs content-img feat3">
                         <p>Ondo</p>
-                        <span><a class="explore-btn" href="">115 Listings</a></span>
+                      <a class="explore-btn" href="">115 Listings</a>
                     </div>
                 </div>
             </div>
@@ -241,15 +268,16 @@
         </div>
         <div class="front-page-explore low-tags">
             <h3>Are you an agent or home owner? Register and enjoy premium listing.</h3>
-            <div>
                 <a class="explore-btn" href="">Register</a>
-            </div>
         </div>
-        <div class="front-page-explore  low-tags" id="bar-foot">
-            <div class="contents newsletter"> 
+        <div class="front-page-explore news">
+            <div class="newsletter"> 
                 <h4>Newsletter SignUp</h4>
-                <input type="email" placeholder="Enter your email address" name="email" >
-                <a href="" class="explore-btn">Sign Up</a>
+                <form action="">
+                    <input type="email" placeholder="Enter your email address" name="email" >
+                    <input type="submit" value="Sign up">
+                </form>
+                
             </div>
         </div>
         <footer>
