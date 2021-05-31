@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured</title>
+    <title>Properties</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,9 @@
         <header class="header">
             <div class="head-tag">
                 <div class="logo-tag">
-                    <img src="./images/small1.svg" alt="">
+                    <a href="./index.html">
+                        <svg class="home-icon away"><use xlink:href="./Esvegees/symbol-defs.svg#icon-home3"></use></svg>
+                    </a>
                 </div>
                 <nav>
                     <ul class="links">
@@ -24,163 +26,259 @@
                 </nav>
                 <div class="navs">
                     <ul>
-                        <li><a href="./login.html">Login</a></li>
-                        <li><a href="./register.html">Register</a></li>
+                        <li><a href="." id="logx">Login</a></li>
+                        <li><a href="./register.html" id="regx">Register</a></li>
                     </ul>
                 </div>
                 <div class="sidebar">
                     <button class="toggle"></button>
                 </div>
+                <div class="side-nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./featured.html">Featured</a></li>
+                        <li><a href="">Get Roomate</a></li>
+                        <li><a href="./blogs.html">Blog</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <div class="top-blog">
-            <h2>Featured</h2>
+            <h2>Properties</h2>
         </div>
         <section class="blog-body">
-            <div class="navigate-bar">
-                <a href="">Featured</a>
-                <img src="./images/arrow-right.svg" alt="">
-                <a href="">Rent</a>
-                <img src="./images/arrow-right.svg" alt="">
-                <p>Elegant Villa in Wuse 2</p>
-            </div>
             
             <div class="props">
-
-                
-
-
-
-                <div class="main-props">
-                    <span class="top-desc">
-                        <h1>Elegant Villa in Wuse 2</h1>
-                        <h4>#3,000,000/year</h4>
-                    </span>
-                    <div class="prop-img">
-                        <img src="./images//image.svg" alt="">
+                <div class="left-range">
+                    <div class="property-type">
+                        <h3>Property Type</h3>
+                        <span class="selected">Deluxe</span>
+                        <span class="selected">Penthouse</span>
+                        <span class="selected">Minimalist</span>
+                        <span class="selected">Apartment</span>
                     </div>
-                    <span class="deck"></span>
-                    <div class="prop-imgs">
-                        <img src="./images/image3.png" alt="">
-                        <img src="./images/image3.png" alt="">
-                        <img src="./images/image3.png" alt="">
+                    <div class="price-range">
+                        <h3>Price</h3>
+                        <input type="range" name="range" id="" min="100000" max="500000">
+                        <span >#100,000 - #500,000</span>
                     </div>
-                    <div class="prop-details">
-                        <h3>Address</h3>
-                        <div class="b-details">
-                            <div class="top-det">
-                                <span>
-                                    <h4>Address:</h4>
-                                    <p>Ademola Adetokunbo Crescent </p>
-                                </span>
-                                <span>
-                                    <h4>City:</h4>
-                                    <p>Abuja</p>
-                                </span>
-                                <span>
-                                    <h4>Area:</h4>
-                                    <p>AMAC</p>
-                                </span>
-
-                            </div>
-                            <div class="bottom-det">
-                                <span>
-                                    <h4>State:</h4>
-                                    <p>Federal Capital Territory</p>
-                                </span>
-                                <span>
-                                    <h4>Zip:</h4>
-                                    <p>9909756</p>
-                                </span>
-                                <span>
-                                    <h4>Country:</h4>
-                                    <p>Nigeria</p>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="bedrooms-field">
+                        <h3>Bedrooms</h3>
+                        <span class="selected">1</span>
+                        <span class="selected">2</span>
+                        <span class="selected">3</span>
+                        <span class="selected">4</span>
+                        
                     </div>
-                    <div class="prop-details">
-                        <h3>Details</h3>
-                        <div class="b-details">
-                            <div class="top-det">
-                                <span>
-                                    <h4>Price:</h4>
-                                    <p>3,000,000</p>
-                                </span>
-                                <span>
-                                    <h4>Bedroom:</h4>
-                                    <p>3</p>
-                                </span>
-                                <span>
-                                    <h4>Floor</h4>
-                                    <p>3</p>
-                                </span>
-
-                            </div>
-                            <div class="bottom-det">
-                                <span>
-                                    <h4>Property size:</h4>
-                                    <p>200sqm</p>
-                                </span>
-                                <span>
-                                    <h4>Bathroom:</h4>
-                                    <p>3</p>
-                                </span>
-                                <span>
-                                    <h4>Swimming Pool:</h4>
-                                    <p>None</p>
-                                </span>
-                            </div>
-                            <div class="bottom-det">
-                                <span>
-                                    <h4>Structural type:</h4>
-                                    <p>Bricks</p>
-                                </span>
-                                <span>
-                                    <h4>Parking Space:</h4>
-                                    <p>3</p>
-                                </span>
-                                <span>
-                                    <h4>Available:</h4>
-                                    <p>Yes</p>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="property-size">
+                        <h3>Property Size</h3>
+                        <span>Up to 66000sqrt</span>
+                        <input type="range" name="prop-size" id="" min="1000" max="70000">
                     </div>
-                    <div class="video">
-                        <h3>Video</h3>
-                        <div class="video-holder">
-                            <img src="./images/Vector.png" alt="">
-                            <img src="./images/Vector1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="prop-details interest">
-                        <h3>Interested in this property?</h3>
-                        <span>
-                            <p>Call 09076575678</p> 
-                            <a href=""><img src="./images/email.svg" alt=""><p>Horlarmihdeh@gmail.com</p></a>
-                            <a href=""><img src="./images/small-twitter.svg" alt="">@TheHorlard</a>
-                            <a href="./images/facebook.svg">TheHorlard</a>
-                        </span>
-                    </div>
-                    <div class="prop-details back">
-                        <a href="">Back to List </a>
+                    <div class="submit-buttons">
+                        <button>Reset</button>
+                        <button>Apply</button>
                     </div>
                 </div>
-                
-                <div class="right-props">
-                    <p>Schedule a guided tour</p>
-                    <form action="">
-                        <div class="input-fields">
-                            <input type="text" name="" id="" placeholder="Day">
-                            <input type="text" name="" id="" placeholder="Time">
-                            <input type="text" name="" id="" placeholder="Full Name">
-                            <input type="email" name="" id="" placeholder="Email">
-                            <input type="number" name="" id="" placeholder="Phone number">
-                            <textarea name="" id="" placeholder="Comment"></textarea>
-                            <button type="submit">Send Message</button>
+                <div class="main-props left">
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-user"></use></svg>Bachelor</span>
                         </div>
-                    </form>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-user"></use></svg>Bachelor</span>
+                        </div>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-users"></use></svg>Family</span>
+                        </div>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-users"></use></svg>Family</span>
+                        </div>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-users"></use></svg>Family</span>
+                        </div>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-user"></use></svg>Bachelor</span>
+                        </div>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-user"></use></svg>Bachelor</span>
+                        </div>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-user"></use></svg>Bachelor</span>
+                        </div>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="properties-details">
+                        <div class="pro-details-img">
+                            <img src="./images/feature2.svg" alt="">
+                            <p class="abs">Like</p>
+                            <span class="abs"><svg class="users-icon"><use xlink:href="./Esvegees/symbol-defs.svg#icon-users"></use></svg>Family</span>
+                        </div>
+                        <div class="main-details">
+                            <h5>#3,200,000</h5>
+                            <h3>Modernized apartment for sale</h3>
+                            <span class="upper-details">
+                                <p><img src="./images/bed.png" alt="">3</p>
+                                <p><img src="./images/swimming.png" alt="">3</p>
+                                <p><img src="./images/park.png" alt="">2</p>
+                            </span>
+                            <p class="location"><img src="./images/locate.png" alt="">Housing Complex GRA, Lagos</p>
+                            <p>Nice, conducive with modernized facilities 3 bedroom with BQ in a fully standardized estate</p>
+                            <span class="end-list">
+                                <p>Verified credentials</p>
+                                <a href="./featureds.html">View Details</a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -188,35 +286,35 @@
             <div class="main-footer">
                 <div class="footer-content">
                     <h4>Horlard</h4>
-                    <p class="tweet">@hhholad</p>
+                    <p class="tweet">@Twitter</p>
                 </div>
                 <div class="footer-content">
-                    <h5>FAQs</h5>
+                    <h4>Company</h4>
                     <p>About Us</p>
-                    <p>Featured</p>
+                    <p>Reviews</p>
                     <p>Privacy Policy</p>
                     <p>Terms of Use</p>
                 </div>
                 <div class="footer-content">
-                    <h5>Home</h5>
+                    <h4>Product</h4>
                     <p>Buy</p>
                     <p>Sell</p>
                     <p>Roomate</p>
-                    <p>Blog</p>
+                    <p>Properties</p>
                 </div>
                 <div class="footer-content">
-                    <h5>Top Cities</h5>
-                    <p>Ondo</p>
+                    <h4>Top-Cities</h4>
+                    <p>Akure</p>
                     <p>Abuja</p>
                     <p>Lagos</p>
                     <p>Port-Harcourt</p>
                 </div>
                 <div class="footer-content">
-                    <h5>Contact Us</h5>
-                    <p class="gmail">Horlarmihdeh@gmail.com</p>
-                    <p class="tel">+2348077935164</p>
-                    <p class="tweet">@hhholad</p>
-                    <p class="face">TheHorlard</p>
+                    <h5>Contact</h5>
+                    <a href="https://accounts.google.com/"><p class="gmail">Email</p></a>
+                    <a href=""><p class="tel">Telephone</p></a>
+                    <a href=""><p class="tweet">Twitter</p></a>
+                    <a href=""><p class="face">Facebook</p></a>
                 </div>
             </div>
             <div class="less-footer">
@@ -224,5 +322,6 @@
             </div>
         </footer>
     </div>
+    <script src="file.js"></script>
 </body>
 </html>
