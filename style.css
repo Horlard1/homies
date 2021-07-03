@@ -109,6 +109,7 @@ a{
     top: 0;
     right: 0;
     z-index: 9999;
+    padding-top: 1.5em;
     transform: translateX(100%);
     transition: .5s all;
     height: 100vh;
@@ -479,6 +480,11 @@ span.abs .users-icon{
 .side{
     width: 35%;
 }   
+@media only screen and (max-width: 1129px){
+    .content{
+        width: 45%;
+    }
+}
 @media only screen and (max-width: 670px){
     .contents{
         flex-direction: column;
@@ -490,12 +496,13 @@ span.abs .users-icon{
     }
 
 }
+
 .text-content{
     margin: 1em;
 }
 .low-tags{
     background:var(--newsLikes);
-    padding: 2em;
+    padding: .5em;
     text-align: center;
 }
 .lower-tags{
@@ -1275,7 +1282,7 @@ form button.explore-btn{
     display: flex;
     width: 100%;
     flex-direction: column;
-    padding: .5em;
+    padding: 1em;
     color: rgba(0, 0, 0, 0.45);
 }
 .main-details h3{
